@@ -15,6 +15,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ComplaintEntryComponent } from './components/complaint-entry/complaint-entry.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { FormsModule } from '@angular/forms';
     DashboardComponent,
     LoginComponent,
     SignupComponent,
-    HomeComponent
+    HomeComponent,
+    ComplaintEntryComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,8 @@ import { FormsModule } from '@angular/forms';
     MatIconModule,
     MatFormFieldModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
