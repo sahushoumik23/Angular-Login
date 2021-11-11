@@ -1,5 +1,10 @@
 <mat-toolbar color="primary">
-  <span><a routerLink="/" mat-icon-button><img mat-icon-button height="50px" src="assets/logo.png" alt="">Complaint_Reso</a></span>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+  <a routerLink="/" mat-icon-button><img mat-icon-button height="50px" src="assets/logo.png" alt="">Complaint_Reso</a>
+  <a routerLink="/create" style="margin-left: 135px; color: blueviolet; background-color: aquamarine;" mat-raised-button >Add Complaint</a>
+    </li>
+  </ul>
   <span class="example-spacer"></span>
   <span><a mat-icon-button routerLink="/login">Login</a></span>
   <span><a mat-icon-button routerLink="/Signup" style="margin-left:10px">Signup</a></span>

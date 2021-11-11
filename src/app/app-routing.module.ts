@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ComplaintEntryComponent } from './components/complaint-entry/complaint-entry.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
@@ -24,6 +25,11 @@ const routes: Routes = [
   {
     path:'dash',
     component:DashboardComponent,
+    pathMatch:'full'
+  },
+  {
+    path:'create',
+    component:ComplaintEntryComponent,
     pathMatch:'full'
   },
 ];

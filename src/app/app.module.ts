@@ -17,6 +17,7 @@ import {MatInputModule} from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ComplaintEntryComponent } from './components/complaint-entry/complaint-entry.component';
+import { AccountListComponent } from './components/account-list/account-list.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ComplaintEntryComponent } from './components/complaint-entry/complaint-
     SignupComponent,
     HomeComponent,
     ComplaintEntryComponent,
+    AccountListComponent,
   ],
   imports: [
     BrowserModule,

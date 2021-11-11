@@ -11,6 +11,11 @@ export class ComplaintService {
   private baseUrl="http://localhost:8080/getAll";
   constructor(private httpClient:HttpClient) { }
 
+  public saveComplaint(complaint:Complaint) :Observable<Object>
+  {
+    return this.httpClient.post(`http://localhost:8080/addComplaint`,complaint);
+  }
+
   public getComplaints() :Observable<Complaint[]>
   {
     return this.httpClient.get<Complaint[]>(`${this.baseUrl}`);
