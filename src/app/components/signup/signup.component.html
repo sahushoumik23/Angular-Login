@@ -1,0 +1,36 @@
+<mat-toolbar color="primary">
+  <span><a routerLink="/" mat-icon-button><img mat-icon-button height="50px" src="assets/logo.png" alt="">Complaint_Reso</a></span>
+  <span class="example-spacer"></span>
+  <span><a mat-icon-button routerLink="/login">Login</a></span>
+</mat-toolbar>
+<form action="">
+  <div class="container text-center">
+    <mat-form-field class="width-align" appearance="fill">
+      <mat-label>First Name</mat-label>
+      <input matInput >
+    </mat-form-field>
+    <mat-form-field class="width-align" appearance="fill">
+      <mat-label>Last Name</mat-label>
+      <input matInput >
+    </mat-form-field>
+    <mat-form-field class="width-align" appearance="fill">
+      <mat-label>Email ID</mat-label>
+      <input type="email" matInput >
+    </mat-form-field>
+    <mat-form-field class="width-align" appearance="fill">
+      <mat-label>Password</mat-label>
+      <input matInput >
+    </mat-form-field>
+    <mat-form-field class="width-align" appearance="fill">
+      <mat-label>Retype Password</mat-label>
+      <input matInput >
+    </mat-form-field>
+  </div>
+  <div class="container text-center">
+    <button mat-raised-button color="primary">Signup</button>
+    <button mat-raised-button style="margin-left: 25px;" color="accent">Reset</button>
+  </div>
+</form>
+<div class="container text-center mt-4">
+  <a mat-button routerLink="/login">Have Account ? Just Login</a>
+</div>
