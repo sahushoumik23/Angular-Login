@@ -1,6 +1,7 @@
 export class Complaint
 {
-  id!: number;
-  name!:string;
-  email!:string;
+  id!:number;
+  complain!:string;
+  priority!:string;
+  type!:string
 }

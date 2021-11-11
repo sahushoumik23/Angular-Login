@@ -3,12 +3,16 @@
 <form (ngSubmit)="onSubmit()">
   <div class="container text-center">
       <mat-form-field class="width-align" appearance="fill">
-        <mat-label>Enter the Name</mat-label>
-        <input type="text" matInput [(ngModel)]="complaintNew.name" name="Name">
+        <mat-label>Enter The Complain</mat-label>
+        <input type="text" matInput [(ngModel)]="complaintNew.complain" name="complain">
       </mat-form-field>
       <mat-form-field class="width-align" appearance="fill">
-        <mat-label>Enter The Email</mat-label>
-        <input type="text" matInput [(ngModel)]="complaintNew.email" name="Email">
+        <mat-label>Enter The Priority</mat-label>
+        <input type="text" matInput [(ngModel)]="complaintNew.priority" name="complain">
+      </mat-form-field>
+      <mat-form-field class="width-align" appearance="fill">
+        <mat-label>Enter The Type</mat-label>
+        <input type="text" matInput [(ngModel)]="complaintNew.type" name="complain">
       </mat-form-field>
   </div>
   <div class="container text-center">

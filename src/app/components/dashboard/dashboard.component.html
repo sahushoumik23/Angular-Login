@@ -5,16 +5,18 @@
 <table class="table text-center">
   <thead>
     <tr>
-      <th>Id</th>
-      <th>Name</th>
-      <th>Email</th>
+      <th>Complain ID</th>
+      <th>Complain</th>
+      <th>Priority</th>
+      <th>Type</th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let complaint of complaints">
       <td>{{complaint.id}}</td>
-      <td>{{complaint.name}}</td>
-      <td>{{complaint.email}}</td>
+      <td>{{complaint.complain}}</td>
+      <td>{{complaint.priority}}</td>
+      <td>{{complaint.type}}</td>
     </tr>
   </tbody>
 </table>
