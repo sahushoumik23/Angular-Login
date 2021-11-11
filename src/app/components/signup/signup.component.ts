@@ -4,7 +4,7 @@ import { Signup } from 'src/app/classes/signup';
 import { SignupService } from 'src/app/services/signup/signup.service';
 
 @Component({
-  selector: 'app-signup',
+selector: 'app-signup',
   templateUrl: './signup.component.html',
   styleUrls: ['./signup.component.css']
 })
@@ -24,13 +24,13 @@ export class SignupComponent implements OnInit {
 
   goToAccountList()
   {
-    this.router.navigate(['/signup'])
+    this.router.navigate(['/login'])
   }
 
   ngOnInit(): void {
   }
 
-  onSubmit()
+  onSignupSubmit()
   {
     this.saveAccount();
   }

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AccountListComponent } from './components/account-list/account-list.component';
 import { ComplaintEntryComponent } from './components/complaint-entry/complaint-entry.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HomeComponent } from './components/home/home.component';
@@ -30,6 +31,11 @@ const routes: Routes = [
   {
     path:'create',
     component:ComplaintEntryComponent,
+    pathMatch:'full'
+  },
+  {
+    path:'signupList',
+    component:AccountListComponent,
     pathMatch:'full'
   },
 ];

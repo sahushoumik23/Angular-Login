@@ -1,1 +1,26 @@
-<p>account-list works!</p>
+<app-navbar></app-navbar>
+<div class="container">
+  <h1 class=" border border-primary border-2 rounded custom" style=" text-align: center;">Accounts Table</h1>
+  </div>
+  <table class="table text-center">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Password</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let account of accounts">
+        <td>{{account.id}}</td>
+        <td>{{account.fname}}</td>
+        <td>{{account.lname}}</td>
+        <td>{{account.email}}</td>
+        <td>{{account.password}}</td>
+
+      </tr>
+    </tbody>
+  </table>
+
