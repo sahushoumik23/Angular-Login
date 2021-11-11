@@ -1,1 +1,19 @@
-<p>dashboard works!</p>
+<app-navbar></app-navbar>
+<h1 class="text-center m-4 border border-primary border-4 rounded-pill">Complaint Table</h1>
+
+<table class="table text-center">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let complaint of complaints">
+      <td>{{complaint.id}}</td>
+      <td>{{complaint.name}}</td>
+      <td>{{complaint.email}}</td>
+    </tr>
+  </tbody>
+</table>
